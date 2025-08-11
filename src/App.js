@@ -8,6 +8,7 @@ export default function App() {
         <main>
           <Dictionary />
         </main>
+        <footer>Coded by Katlin Pala</footer>
       </div>
     </div>
   );
