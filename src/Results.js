@@ -1,5 +1,6 @@
 import React from "react";
 import Meaning from "./Meaning";
+import "./Results.css";
 
 export default function Results({ results }) {
   if (!results || !Array.isArray(results.meanings)) {
@@ -8,15 +9,16 @@ export default function Results({ results }) {
 
   return (
     <div className="Results">
-      <h2>{results.word}</h2>
-      <p>
-        <em>{results.phonetic}</em>
-      </p>
-
+      <section>
+        <h2>{results.word}</h2>
+        <p>
+          <em className="phonetic">{results.phonetic}</em>
+        </p>
+      </section>
       {results.meanings.map((meaning, index) => (
-        <div key={index}>
+        <section key={index}>
           <Meaning meaning={meaning} />
-        </div>
+        </section>
       ))}
     </div>
   );

@@ -5,17 +5,17 @@ export default function Meaning({ meaning }) {
     <div className="Meaning">
       <h3>{meaning.partOfSpeech}</h3>
       <p>
-        {meaning.definition}
+        <div className="definition">{meaning.definition}</div>
         {meaning.example && (
           <>
             <br />
-            <em>{meaning.example}</em>
+            <em className="example">{meaning.example}</em>
           </>
         )}
       </p>
 
       {meaning.synonyms && meaning.synonyms.length > 0 && (
-        <p>
+        <p className="synonyms">
           <strong>Synonyms:</strong> {meaning.synonyms.join(", ")}
         </p>
       )}
