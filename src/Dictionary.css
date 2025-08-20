@@ -6,6 +6,14 @@
   margin: 20px 0;
 }
 
+.Dictionary .title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
 .Dictionary input {
   width: 100%;
   border-radius: 6px;
@@ -15,6 +23,7 @@
 }
 
 .Dictionary .hint {
-  font-size: 11px;
-  margin-top: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: left;
 }
