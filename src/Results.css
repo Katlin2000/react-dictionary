@@ -4,6 +4,10 @@
   line-height: 1.5;
 }
 
+.Results {
+  text-align: left;
+}
+
 .Results .phonetic {
   opacity: 0.5;
   font-weight: bold;
